@@ -61,3 +61,21 @@ const user: { id: number; name: string } = {
   id: 1,
   name: "sammy",
 };
+
+// or
+
+type Dum = {
+  id: number;
+  name: string;
+};
+const dum: Dum = {
+  id: 3,
+  name: "sam",
+};
+
+
+// Type Assertion
+let cid : any = 'fed'
+let customer = <number>cid
+
+customer =3

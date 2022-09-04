@@ -39,3 +39,11 @@ const user = {
     id: 1,
     name: "sammy",
 };
+const dum = {
+    id: 3,
+    name: "sam",
+};
+// Type Assertion
+let cid = 'fed';
+let customer = cid;
+customer = 3;
