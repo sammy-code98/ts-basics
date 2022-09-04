@@ -14,29 +14,50 @@ let isAuth: boolean = true;
 
 // type of any
 
-let x: any = 'helloe boy'
+let x: any = "helloe boy";
 
 // set x to another data type and no error shows
 
-x = true
+x = true;
 
 // array of numbers
 
-let numArr : number[] = [1,2,3, 4,5]
+let numArr: number[] = [1, 2, 3, 4, 5];
 
 console.log(numArr.push(3));
 
-let myArr: any[] = [1, 'true' , true]
-
+let myArr: any[] = [1, "true", true];
 
 // tuple  => with tuple you define the data types in the array
 
-let person : [number, string, boolean] = [2,'samm', false]
+let person: [number, string, boolean] = [2, "samm", false];
 
 // tuple array
-let employeData: [string, number][]
+let employeData: [string, number][];
 
 employeData = [
-    ['sam', 23],
-    ['nze', 22]
-]
+  ["sam", 23],
+  ["nze", 22],
+];
+
+// Union => use when you want a variable to be able to hold more than one type
+
+let userId: string | number = 22;
+
+// enum => enumerated types => define a set of named constants
+
+enum Dir {
+  Up,
+  Down,
+  Left,
+  Right,
+}
+
+console.log(Dir.Up);
+
+// objects
+
+const user: { id: number; name: string } = {
+  id: 1,
+  name: "sammy",
+};
