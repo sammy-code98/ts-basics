@@ -73,9 +73,21 @@ const dum: Dum = {
   name: "sam",
 };
 
-
 // Type Assertion
-let cid : any = 'fed'
-let customer = <number>cid
+let cid: any = "fed";
+// let customer = <number>cid
 
-customer =3
+let customer = cid as number;
+customer = 3;
+
+// functions
+
+function addNum(x: number, y: number): number {
+  return x + y;
+}
+
+// void type
+function log(msg : number |  string) :void{
+    console.log(msg);
+    
+}

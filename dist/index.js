@@ -44,6 +44,15 @@ const dum = {
     name: "sam",
 };
 // Type Assertion
-let cid = 'fed';
+let cid = "fed";
+// let customer = <number>cid
 let customer = cid;
 customer = 3;
+// functions
+function addNum(x, y) {
+    return x + y;
+}
+// void type
+function log(msg) {
+    console.log(msg);
+}
