@@ -91,3 +91,18 @@ function log(msg : number |  string) :void{
     console.log(msg);
     
 }
+
+// Interfaces
+interface userInterface {
+    id:number,
+    name:string,
+    // use ? for optional propeties
+    age?:number
+
+}
+
+const useed : userInterface= {
+    id:2,
+    name:'helo'
+
+}

@@ -56,3 +56,7 @@ function addNum(x, y) {
 function log(msg) {
     console.log(msg);
 }
+const useed = {
+    id: 2,
+    name: 'helo'
+};
