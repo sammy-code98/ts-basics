@@ -87,22 +87,35 @@ function addNum(x: number, y: number): number {
 }
 
 // void type
-function log(msg : number |  string) :void{
-    console.log(msg);
-    
+function log(msg: number | string): void {
+  console.log(msg);
 }
 
 // Interfaces
 interface userInterface {
-    id:number,
-    name:string,
-    // use ? for optional propeties
-    age?:number
-
+  id: number;
+  name: string;
+  // use ? for optional propeties
+  age?: number;
 }
 
-const useed : userInterface= {
-    id:2,
-    name:'helo'
+const useed: userInterface = {
+  id: 2,
+  name: "helo",
+};
 
+// classes
+class Person {
+  id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
 }
+const sam =  new Person(1, 'hello')
+const nze = new Person(2, 'Nze')
+
+console.log(sam, nze);
+

@@ -58,5 +58,15 @@ function log(msg) {
 }
 const useed = {
     id: 2,
-    name: 'helo'
+    name: "helo",
 };
+// classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+const sam = new Person(1, 'hello');
+const nze = new Person(2, 'Nze');
+console.log(sam, nze);
